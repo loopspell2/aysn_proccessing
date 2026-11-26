@@ -1,0 +1,27 @@
+module.exports = {
+    RABBIT_URL: 'amqp://admin:admin123@localhost:5672',
+    QUEUES: {
+        HELLO: 'hello_queue',
+        TASKS: 'tasks_queue',
+        DUR_PERSISTENT: 'dur_persistent_q',
+        DUR_TRANSIENT_MSG: 'dur_transient_msg_q',
+        TRANSIENT: 'transient_q',
+        WORK: 'work_queue',
+        RETRY_MAIN: 'retry_main_q',
+        RETRY_WAIT: 'retry_wait_q',
+        TTL_DEMO: 'ttl_demo_q',
+        ORDERS: 'orders_q',
+        LIMITED: 'limited_q',
+        DLQ: 'orders_dlq',
+    },
+    EXCHANGES: {
+        DIRECT: 'logs_direct',
+        FANOUT: 'news_fanout',
+        TOPIC: 'events_topic',
+        HEADERS: 'reports_headers',
+        RETRY: 'retry_ex',
+        DLX: 'dlx_ex',
+    },
+    RETRY_DELAY_MS: 3000,
+    MAX_ATTEMPTS: 3,
+};
